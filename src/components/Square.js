@@ -2,13 +2,12 @@ import React, {useState} from 'react';
 import styles from '../styles/board.css';
 
 
-const Square = () => {
-  const [number, setNumber] = useState()
+const Square = (props) => {
 
   return(
     <>
     <button className='square'>
-      {number}
+      {props.number}
 
     </button>
     </>
