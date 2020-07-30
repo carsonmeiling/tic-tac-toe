@@ -5,13 +5,14 @@ import Square from './Square';
 
 const Board = () => {
   const [number, setNumber] = useState('')
+  const [symbol, setSymbol] = useState('X')
   
 
 
   return(
     <>
     <div className='board-row'>
-      <Square number={1}/>
+      <Square number={1} symbol={symbol}/>
       <Square number={2}/>
       <Square number={3}/>
     </div>
